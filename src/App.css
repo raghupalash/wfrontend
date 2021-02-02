@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
+body {
+    font-family: 'Poppins', Arial;
+}
+#section-form {
+	margin-bottom: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#section-form  textarea {
+	height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* navbar styles */
+.navbar-brand {
+    font-weight: 600;
+    font-size: 30px;
+    padding-right: 10px;
+    border-right: 9px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.channel-name {
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.channel-name:hover {
+    text-decoration: none;
+    color: black;
 }
