@@ -40,9 +40,9 @@ class App extends Component {
 					{this.state.heading !== '' 
 						?
 						// wantText tells the form if we want the main heading or a section
-						<SectionForm  dataToApp={this.dataSectionForm} wantText={true} formFor='creating'/>
+						<SectionForm  dataToApp={this.dataSectionForm} wantText={true}/>
 						:
-						<SectionForm dataToApp={this.dataSectionForm} wantText={false} formFor='creating'/>
+						<SectionForm dataToApp={this.dataSectionForm} wantText={false}/>
 					}
 				</div>
 			</div>
