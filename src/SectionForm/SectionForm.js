@@ -80,7 +80,16 @@ class SectionForm extends Component {
 
 	// Event listener for cancel button
 	cancelSection = () => {
-		if(this.state.draftHeading !== '' || this.state.draftText !== '') {
+		// If the form is completly empty then skip the warning part
+		if(this.state.draftHeading === '' && this.state.draftText === '') {
+			this.setState({
+				draftHeading: '',
+                draftText: '',
+				headingChosen: `h${2}`,
+				writting: false,
+				warn: false,
+			})
+		} else {
 			this.setState({
 				warn: true,
 			})
