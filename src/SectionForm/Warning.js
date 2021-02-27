@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 export default function Warning(props) {
-    // Event listener to show/hide warning
+    // Go back
     const close = e => {
         let data = {
             path: 'backward',
@@ -12,6 +12,7 @@ export default function Warning(props) {
         props.dataToForm(data);
     };
 
+    // Go "forward" and delete it
     const remove = e => {
         let data = {
             path: 'forward',
